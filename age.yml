@@ -1,0 +1,6 @@
+age:
+  enabled: false
+  age_x_coord: 0
+  age_y_coord: 32
+  str_x_coord: 67
+  str_y_coord: 32
