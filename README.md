@@ -16,22 +16,44 @@ Then run this command: `sudo pwnagotchi plugins update`
 ### age.py
 
 ```toml
-main.plugins.age.enabled = true
-main.plugins.age.age_x_coord = 0
-main.plugins.age.age_y_coord = 32
-main.plugins.age.str_x_coord = 67
-main.plugins.age.str_y_coord = 32
+[main.plugins.age]
+enabled = true
+age_x_coord = 0
+age_y_coord = 32
+str_x_coord = 67
+str_y_coord = 32
 ```
 
 ### exp.py
 
 ```toml
-main.plugins.exp.enabled = true
-main.plugins.exp.lvl_x_coord = 0
-main.plugins.exp.lvl_y_coord = 81
-main.plugins.exp.exp_x_coord = 38
-main.plugins.exp.exp_y_coord = 81
-main.plugins.exp.bar_symbols_count = 12
+[main.plugins.exp]
+enabled = true
+lvl_x_coord = 0
+lvl_y_coord = 81
+exp_x_coord = 38
+exp_y_coord = 81
+bar_symbols_count = 12
+```
+
+### pwnachu-exp.py
+
+```toml
+[main.plugins.pwnachu-exp]
+enabled = true
+lvl_x_coord = 0
+lvl_y_coord = 81
+exp_x_coord = 32
+exp_y_coord = 81
+bar_symbols_count = 12
+
+```
+
+### pwnachu-theme.toml
+
+```toml
+[main.plugins.pwnachu-theme]
+enabled = true
 ```
 
 ### wavesharebattery.py
@@ -42,5 +64,6 @@ sudo raspi-config nonint do_i2c 0
 ```
 
 ```toml
-main.plugins.wavesharebattery.enabled = true
+[main.plugins.wavesharebattery]
+enabled = true
 ```

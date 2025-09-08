@@ -1,0 +1,7 @@
+[main.plugins.pwnachu-exp]
+enabled = true
+lvl_x_coord = 0
+lvl_y_coord = 81
+exp_x_coord = 32
+exp_y_coord = 81
+bar_symbols_count = 12

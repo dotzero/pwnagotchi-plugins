@@ -152,11 +152,11 @@ class WaveshareBattery(plugins.Plugin):
 
         logging.info("Pwnagotchi Battery Plugin: battery plugin is enabled")
         ui.add_element('ups', LabeledValue(
-            color=BLACK, 
-            label='UPS', 
-            value='-', 
-            position=(ui.width() / 2 + 15, 0), 
-            label_font=fonts.Bold, 
+            color=BLACK,
+            label='UPS',
+            value='-',
+            position=(ui.width() / 2 + 15, 0),
+            label_font=fonts.Bold,
             text_font=fonts.Medium
         ))
 
@@ -184,17 +184,17 @@ class WaveshareBattery(plugins.Plugin):
 
             if self.refresh_counter == 100:
                 self.refresh_counter = 0
-        
+
         if battery_percentage <= 10:
             ui.set('ups', "LOW")
             ui.update(force=True, new_data={'status': 'Battery low... Please charge!'})
             ui.set('face', faces.SAD)
-        
+
         if battery_percentage > 91:
             ui.set('ups', "CHG")
             ui.update(force=True, new_data={'status': 'Battery charging! '})
-            ui.set('face', faces.HAPPY) 
-        
+            ui.set('face', faces.HAPPY)
+
 
     def on_unload(self, ui):
         try:
